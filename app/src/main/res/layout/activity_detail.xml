@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_detailImgFood"
+        android:src="@drawable/banhkhot"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+    <TextView
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/tv_detailNameFood"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:text="Bánh khọt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:textColor="@color/black"
+            android:text="Price : "
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/text"
+            android:textStyle="normal"
+            android:id="@+id/tv_detailPrice"
+            android:textSize="24sp"
+            android:text="50000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:background="@color/text"
+       android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <TextView
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:text="Describe"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginLeft="10dp"
+        android:layout_width="120dp"
+        android:layout_height="38dp"/>
+    <TextView
+        android:textColor="#46474A"
+        android:textStyle="normal"
+        android:layout_margin="10dp"
+        android:textSize="17sp"
+        android:text="hafnknklksnkncasuif klwknqnf;s;;asnvkd"
+        android:id="@+id/tv_detailDescribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_addToCart"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:background="@drawable/button_addtocart"
+        android:textAlignment="center"
+        android:text="Add to Cart"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    </LinearLayout>
+
+</ScrollView>

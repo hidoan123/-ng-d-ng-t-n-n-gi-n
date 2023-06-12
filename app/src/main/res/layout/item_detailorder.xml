@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/rounded_border"
+    >
+    <ImageView
+        android:id="@+id/img_detailCart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/buncha"/>
+
+    <TextView
+        android:id="@+id/tv_DetailCartNameFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/img_detailCart"
+        android:text="Bun cha"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/title_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_detailCart"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/img_detailCart"
+        android:text="Total Price:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_DetailTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_detailCart"
+        android:layout_toEndOf="@id/title_Price"
+        android:text="120000"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_DetailCartNameFood"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/img_cartdecrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_decrease" />
+
+        <TextView
+            android:id="@+id/tv_cartQuanlity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_cartincrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_increase" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_Deletetocart"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/title_Price"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_addtocart"
+        android:text="Delete"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

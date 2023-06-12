@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text"
+        android:text="Giỏ hàng của bạn"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/img_CartFood"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/buncha" />
+
+        <TextView
+            android:id="@+id/tv_CartNameFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/img_CartFood"
+            android:text="Bun cha"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/title_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_CartFood"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/img_CartFood"
+            android:text="Total Price:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_TotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_CartFood"
+            android:layout_toEndOf="@id/title_Price"
+            android:text="120000"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_CartNameFood"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/img_decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_decrease" />
+
+            <TextView
+                android:id="@+id/tv_Quanlity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_increase" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_Addtocart"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/title_Price"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/button_addtocart"
+            android:text="add"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

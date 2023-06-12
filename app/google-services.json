@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "79397981877",
+    "project_id": "app-dat-do-an-981d3",
+    "storage_bucket": "app-dat-do-an-981d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79397981877:android:3d9f5cc9eab4ec2b77f8fc",
+        "android_client_info": {
+          "package_name": "com.example.appdatdoan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnrJt5aPHxevlDot3_t3rYx3vz3dujmz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
