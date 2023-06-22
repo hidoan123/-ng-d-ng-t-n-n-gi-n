@@ -45,7 +45,7 @@
             android:hint="Enter your email"
             android:background="@color/feedback_text"
             android:textSize="20sp"
-            android:id="@+id/edt_Email"
+            android:id="@+id/edt_YourEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
@@ -72,9 +72,9 @@
             android:hint="Enter content"
             android:textColor="@color/black"
             android:textSize="20sp" />
-
     </LinearLayout>
     <Button
+        android:id="@+id/btn_SentFeedBack"
         android:textColor="@color/black"
         android:text="@string/button_sent_feedback"
         android:layout_margin="10dp"
